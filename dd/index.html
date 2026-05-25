@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetros de Manobras BMX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <nav class="tabs-nav">
+            <button class="tab-btn active" onclick="openTab(event, 'barspin')">Bar Spin</button>
+            <button class="tab-btn" onclick="openTab(event, 'tailwhip')">Tailwhip</button>
+            <button class="tab-btn" onclick="openTab(event, 'manual')">Manual</button>
+            <button class="tab-btn" onclick="openTab(event, 'suicide')">Suicide</button>
+        </nav>
+
+        <section class="tabs-content">
+            <div id="barspin" class="tab-panel active">
+                <h2>Manobra: Bar Spin</h2>
+                <p>Tempo restante para a conclusão:</p>
+                <div class="countdown" id="timer-barspin"></div>
+            </div>
+
+            <div id="tailwhip" class="tab-panel">
+                <h2>Manobra: Tailwhip</h2>
+                <p>Tempo restante para a conclusão:</p>
+                <div class="countdown" id="timer-tailwhip"></div>
+            </div>
+
+            <div id="manual" class="tab-panel">
+                <h2>Manobra: Manual</h2>
+                <p>Tempo restante para a conclusão:</p>
+                <div class="countdown" id="timer-manual"></div>
+            </div>
+
+            <div id="suicide" class="tab-panel">
+                <h2>Manobra: Suicide</h2>
+                <p>Tempo restante para a conclusão:</p>
+                <div class="countdown" id="timer-suicide"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
