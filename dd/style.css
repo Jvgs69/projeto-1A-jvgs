@@ -115,3 +115,13 @@ body {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* Estilização das imagens das manobras */
+.manobra-img {
+    max-width: 100%;
+    width: 320px; /* Define uma largura padrão */
+    height: auto;
+    border-radius: 8px; /* Arredonda os cantos para combinar com o layout */
+    margin-bottom: 20px; /* Cria um espaço entre a imagem e o título h2 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra leve nas fotos */
+    display: inline-block; /* Garante o alinhamento centralizado pelo text-align do pai */
+}
